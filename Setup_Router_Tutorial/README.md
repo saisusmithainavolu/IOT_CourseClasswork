@@ -49,7 +49,7 @@ Repeater connects the router to another existing wireless networks. Go to Repeat
 Choose the updated SSID from the available Wifi and connect to it. You will be now connected to the Wi-Fi with internet.
 
 
-![alt text](Img_Directory/Setup Complete.png)
+![alt text](Img_Directory/Setup_Complete.png)
 
 
 # Important:
