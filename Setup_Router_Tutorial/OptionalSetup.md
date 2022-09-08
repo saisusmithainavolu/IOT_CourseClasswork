@@ -14,7 +14,7 @@ Using a USB cable to share network from your smartphone to the router is called 
 
 ![alt text](Img_Directory/Connect.png)
 
-Tethering is now connected!!
+**Tethering is now connected!!**
 
 ![alt text](Img_Directory/Tethering.png)
 
