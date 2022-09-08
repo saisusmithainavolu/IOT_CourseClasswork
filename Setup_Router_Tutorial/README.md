@@ -26,30 +26,30 @@ Open a web browser and visit http://192.168.8.1. You will be directed to the ini
 
 You need to choose the display language of the Admin Panel. Available languages are English, 简体中文, 繁體中文, Deutsch, Français, Español, Italiano 日本語, 한국어 and Русский.
 
-![alt text](Img_Directory/Admin Panel.png)
+![alt text](Img_Directory/Admin_Panel.png)
 
 - Setup Admin password
 
 There is no default password for this Admin Panel. You have to set your own password, which must be at least 5 characters. Then, click Submit to proceed.
 
-![alt text](Img_Directory/setup admin password.png)
+![alt text](Img_Directory/setup_admin_password.png)
 
 - Change the SSID
 
 After the initial setup, you will enter the web Admin Panel of the router. Go to the **Wireless** tab in the left menu click **Modify** and change the SSID and password for your wireless connection.
 
-![alt text](Img_Directory\change SSID.png)
+![alt text](Img_Directory/change_SSID.png)
 
 - Configure Repeater
 
 Repeater connects the router to another existing wireless networks. Go to Repeater section, click **Scan**. It searches for available wireless networks nearby. Choose a SSID from the drop-down list and enter its credentials. You can also enable the **Remember** button to save the current chosen wireless network. Finally, click **Join**.
 
-![alt text](Img_Directory\repeater.png)
+![alt text](Img_Directory/repeater.png)
 
 Choose the updated SSID from the available Wifi and connect to it. You will be now connected to the Wi-Fi with internet.
 
 
-![alt text](Img_Directory\Setup Complete.png)
+![alt text](Img_Directory/Setup Complete.png)
 
 
 # Important:
