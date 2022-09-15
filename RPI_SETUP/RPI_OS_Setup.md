@@ -4,23 +4,23 @@
 The DietPi is a lightweight Debian-based Linux distribution that can be used as a host operating system on Raspberry Pi devices. 
 
 ## Equipment  ##
-## Recommended ##
+### Recommended ###
 1. Laptop or Desktop - I am using my personal laptop with Windows 11 OS. It is a 11th Gen Intel Core-i7 64-bit operating system.
 2. Raspberry Pi - I am using a Raspberry Pi 4 Model B 2019. (Purchase Link: )
 3. Micro SD Card (8GB+) - I am using a Lexar 32 GB Micro SD card. (Purchase Link: )
 4. Wi-Fi - I am using GL.iNet GL-MT300N-V2 portable travel wireless VPN router. (Purchase Link: )
 Checkout the link if you need help in setting up WI-FI router. 
 
-## Optional ##
+### Optional ###
 1. Raspberry Pi Case
 2. SD Card Converter/ Card Reader
 
-## Setup Steps ##
+With all the equipment ready you are good to follow the below steps !!
 
-### 1. Setup your working environment on your laptop ###
-1. Prepare your device to with an archiver extractor - on windows I used BreeZip http:www.breezip.com but others are available from https://www.7-zip.org . On MacOS V11 it extracted using tools already installed but an unarchiver is available at  https://theunarchiver.com for your mac if extraction is not working.
-1. Prepare you laptop with a sd card writer such as: balenaEtcher https://www.balena.io/etcher/
-
+### 1. Download an extractor and Image flasher on your laptop ###
+1. Extractor - We use the extractor to extract the diet-pi image file.
+   - For Windows, use BreeZip http:www.breezip.com or 7-Zip https://www.7-zip.org. 
+2. balenaEtcher - We use the balena Etcher https://www.balena.io/etcher/ to burn the diet-pi image to sd card. 
 
 ### 2. Download and configure  DietPI on your laptop
 1. Download and extract the DietPi disk image
