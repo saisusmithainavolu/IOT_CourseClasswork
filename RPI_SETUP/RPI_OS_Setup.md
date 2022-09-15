@@ -44,7 +44,7 @@ With all the equipment ready you are good to follow the below steps !!
    - edit dietpi-wifi.txt with your router SSID and its password.
       
       |Lines to change | Example |
-      | ------------- | ------------- |
+      | :-------------: | :-------------: |
       |aWIFI_SSID[0]=''  | aWIFI_SSID[0]='VU-FALL22-IOT' |
       |aWIFI_KEY[0]='' |  aWIFI_KEY[0]='123pass' |
 
@@ -83,7 +83,7 @@ With all the equipment ready you are good to follow the below steps !!
    - use SSH to login into your PI using
    
   |Command| Password|
-  | ------------- |-------------|
+  | :-------------: |:-------------:|
   | ssh root@IPADDR |       dietpi|
 
 ![Clients](Img_Directory/CLIENTSpage.png)
