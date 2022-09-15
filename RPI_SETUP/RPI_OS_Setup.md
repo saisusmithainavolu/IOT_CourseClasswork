@@ -72,13 +72,13 @@ With all the equipment ready you are good to follow the below steps !!
 
 ### Running DietPi in RPI
 1. Install SD card onto the PI and powerup the PI.
-        - It is adviced to used Raspberry Pi with its case since RPI is fragile and has exposed circuitry that can quickly get damaged
+     - It is adviced to used Raspberry Pi with its case since RPI is fragile and has exposed circuitry that can quickly get damaged       
 2. Red light turn on and green light starts flashing as the install is running
 3. Wait until the green light has finished flashing
 
 ### Login to the DietPi
 
-1. Using the admin website of your router at
+ Using the admin website of your router at
    - check the CLIENTS page for the IPADDR of the pi that is booted up.
    - use SSH to login into your PI using
    
@@ -91,6 +91,7 @@ With all the equipment ready you are good to follow the below steps !!
    - Now the installations start and the connection will be closed automatically.
    - SSH Login to PI again. This time DietPi interface will be opened prompting you to change the Software and User password. Be sure to change the passwords.
    - Finally, Dietpi Interface opens up for you to finish other setup.
+   - 
  ![Dietpi_Interface](Img_Directory/Dietpi_Interface.png)
 
 ### You are now ready to start install platform software.
