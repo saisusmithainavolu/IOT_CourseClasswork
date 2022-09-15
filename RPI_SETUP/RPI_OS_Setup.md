@@ -58,7 +58,7 @@ With all the equipment ready you are good to follow the below steps !!
       AUTO_SETUP_AUTOSTART_TARGET_INDEX=1
       SURVEY_OPTED_IN=0
       CONFIG_SERIAL_CONSOLE_ENABLE=1
-      ```
+   
          - Change {YOUR_INITIALS} with a unique string. For example, I used SSI so it would be DietPi_SSI.
          - Save the changes
 4. Copy the dietpi.txt and dietpi-wifi.txt you edited to the top level directory of your sd card.
