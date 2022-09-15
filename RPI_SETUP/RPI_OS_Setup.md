@@ -80,7 +80,9 @@ With all the equipment ready you are good to follow the below steps !!
   |Command| Password|
   | ------------- |-------------|
   | ssh root@IPADDR |       dietpi|
-    
+
+![Clients](Img_Directory/CLIENTS page.png)
+
    - Now the installations start and the connection will be closed automatically.
    - SSH Login to PI again. This time DietPi interface will be opened prompting you to change the Software and User password. Be sure to change the passwords.
    
