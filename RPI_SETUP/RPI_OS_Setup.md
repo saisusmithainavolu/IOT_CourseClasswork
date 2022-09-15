@@ -93,4 +93,4 @@ With all the equipment ready you are good to follow the below steps !!
  ![Dietpi_Interface](Img_Directory/Dietpi_Interface.png)
 
 ### You are now ready to start install platform software.
-Follow the tutorial to install IOT platform software [IOT Platform Install](/IOT_Platform_Install.md)
+
