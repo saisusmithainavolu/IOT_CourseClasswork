@@ -33,7 +33,11 @@ With all the equipment ready you are good to follow the below steps !!
    - Select the targeted card
    - Click on flash
       - Wait until the flashing and validating are done
+      - Finally it says flash is complete
    - Close balenaetcher
+ 
+![Flash_Complete](Img_Directory/Flash_Complete.png)
+
 3. Configure the boot image on the microSD card of dietpi.
    - copy dietpi.txt and dietpi-wifi.txt to a temporary directory
    - edit dietpi-wifi.txt with your router SSID and its password.
@@ -81,10 +85,12 @@ With all the equipment ready you are good to follow the below steps !!
   | ------------- |-------------|
   | ssh root@IPADDR |       dietpi|
 
-![Clients](Img_Directory/CLIENTS page.png)
+![Clients](Img_Directory/CLIENTSpage.png)
 
    - Now the installations start and the connection will be closed automatically.
    - SSH Login to PI again. This time DietPi interface will be opened prompting you to change the Software and User password. Be sure to change the passwords.
-   
+   - Finally, Dietpi Interface opens up for you to finish other setup.
+ ![Dietpi_Interface](Img_Directory/Dietpi_Interface.png)
+
 ### You are now ready to start install platform software.
-Follow the tutorial to install IOT platform software [IOT Platform Install](../RPI_IOT_PLATFORM_INSTALL_tutorial)
+Follow the tutorial to install IOT platform software [IOT Platform Install](/IOT_Platform_Install.md)
