@@ -6,9 +6,9 @@ The DietPi is a lightweight Debian-based Linux distribution that can be used as 
 ## Equipment  ##
 ### Recommended ###
 1. Laptop or Desktop - I am using my personal laptop with Windows 11 OS. It is a 11th Gen Intel Core-i7 64-bit operating system.
-2. Raspberry Pi - I am using a Raspberry Pi 4 Model B 2019. (Purchase Link: )
-3. Micro SD Card (8GB+) - I am using a Lexar 32 GB Micro SD card. (Purchase Link: )
-4. Wi-Fi - I am using GL.iNet GL-MT300N-V2 portable travel wireless VPN router. (Purchase Link: )
+2. Raspberry Pi - I am using a Raspberry Pi 4 Model B 2019. ( Purchase Link: https://a.co/d/8l62zRC )
+3. Micro SD Card (8GB+) - I am using a Lexar 32 GB Micro SD card. ( Purchase Link: https://a.co/d/atJiXKp )
+4. Wi-Fi - I am using GL.iNet GL-MT300N-V2 portable travel wireless VPN router. ( Purchase Link : https://a.co/d/bvOWIcr )
 Checkout the link if you need help in setting up WI-FI router. 
 
 ### Optional ###
@@ -59,8 +59,8 @@ With all the equipment ready you are good to follow the below steps !!
       SURVEY_OPTED_IN=0
       CONFIG_SERIAL_CONSOLE_ENABLE=1
    
-         - Change {YOUR_INITIALS} with a unique string. For example, I used SSI so it would be DietPi_SSI.
-         - Save the changes
+       - Change {YOUR_INITIALS} with a unique string. For example, I used SSI so it would be DietPi_SSI.
+       - Save the changes
 4. Copy the dietpi.txt and dietpi-wifi.txt you edited to the top level directory of your sd card.
 
 5. Eject the SD card from your laptop
