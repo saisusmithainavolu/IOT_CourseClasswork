@@ -9,17 +9,17 @@
 1. SSH to the RPI using the command `ssh dietpi@[PI_IPADDRESS]`
 
 2. To install the softwares go to Search Software tab in DietPi interface
-   1. search for mqtt and select 123 MQTT message broker install by hitting the spacebar and selecting ok
-   2. search for node-red and select "122  Node-RED: tool for wiring devices, APIs and online services" install by hitting the spacebar and selecting ok
-   3. search for postgre and  select "194  PostgreSQL: Persistent advanced object-relational database server" install by hitting the spacebar and selecting ok
-   3. Move curser to Install and tab to ok 
-   4. Hit OK if you see MQTT, Node-red and postgre and start the install
+   - Type mqtt, Hit OK and select `123 MQTT message broker`. Install by hitting the spacebar and selecting ok
+   - Type node-red, Hit OK  and select `122  Node-RED: tool for wiring devices, APIs and online services`. Install by hitting the spacebar and selecting ok
+   - Type postgre, Hit OK and  select `194  PostgreSQL: Persistent advanced object-relational database server`. Install by hitting the spacebar and selecting ok
+   - Move curser to Install and tab to ok 
+   - Hit OK if you see MQTT, Node-red and postgre and start the install
    
-3. reboot the pi on the command line using `reboot` command and ssh in again.
+3. Reboot the pi on the command line using `reboot` command and ssh in again.
 
 ### Setup Postgres ###
 
-Nowthat we already installed postgres we will configure it now.
+Nowthat we already installed postgres, we will configure it now.
 
 1. run on your pi ssh session
 
@@ -72,16 +72,13 @@ When prompted, enter a password and confirm it, select 'n' for superuser, and 'y
 > cat /var/log/postgresql/postgresql-13-main.log
 
  
-### NODE-RED ###
+### Setup NODE-RED ###
 
-Info on using node red on the pi is found on the nodered.org website: https://nodered.org/docs/getting-started/raspberrypi
-You can ignore the installation part since it was done via the dietpi-software interface
-
-1.   Connect to node-red to see that it is running using it RPI Static IPaddr
+1.   Connect to node-red using RPI Static IPaddr found in CLIENTS page in your WI-FI admin Panel.
 
 http://{YOUR_RPI_IPADDRESS}:1880
 
-1. Install node-red-contrib-re-postgres  in your ssh command line using:
+1. Install node-red-contrib-re-postgres in your ssh command line using:
 
 npm install node-red-contrib-re-postgres
 
@@ -89,13 +86,11 @@ npm install node-red-contrib-re-postgres
 
 > dietpi-services restart node-red
 
-General services info found in https://github.com/MichaIng/DietPi/issues/1114
+3. Get back to Node-Red and Go to Manage Pallet 
+4. In the Manage pallet go to Install and install node-red-contrib-postgresql
+5. pull a postgresql node into a flow
+      - postgresql node is found under `storage` category 
+7. Double click on the node and configure a database instance
+8. Pull in a trigger and template node and debug node and wire them as below
 
-3. Go to Manage Pallet and install  node-red-contrib-postgresql
-4. Install should note that it is working
-5. pull a postgres node into a flow
-6. click on the node and configure a database instance
-7. Be sure to label it and set Recieve query output? and Return message on error on by enabling checkboxes and save
-8. Pull in a trigger and template node and debug node and wire
 
-trigger->template->Postgres->debug
