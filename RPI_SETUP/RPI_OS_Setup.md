@@ -9,7 +9,8 @@ The DietPi is a lightweight Debian-based Linux distribution that can be used as 
 2. Raspberry Pi - I am using a Raspberry Pi 4 Model B 2019. ( Purchase Link: https://a.co/d/8l62zRC )
 3. Micro SD Card (8GB+) - I am using a Lexar 32 GB Micro SD card. ( Purchase Link: https://a.co/d/atJiXKp )
 4. Wi-Fi - I am using GL.iNet GL-MT300N-V2 portable travel wireless VPN router. ( Purchase Link : https://a.co/d/bvOWIcr )
-Checkout the link if you need help in setting up WI-FI router. 
+
+Checkout the link if you need help in setting up WI-FI router. [Router Setup Tutorial](../Setup_Router_Tutorial)
 
 ### Optional ###
 1. Raspberry Pi Case
@@ -33,7 +34,7 @@ With all the equipment ready you are good to follow the below steps !!
    - Select the targeted card
    - Click on flash
       - Wait until the flashing and validating are done
-      - Finally it says flash is complete
+      - Finally it says flash complete
    - Close balenaetcher
  
 ![Flash_Complete](Img_Directory/Flash_Complete.png)
