@@ -59,8 +59,8 @@ With all the equipment ready you are good to follow the below steps !!
       SURVEY_OPTED_IN=0
       CONFIG_SERIAL_CONSOLE_ENABLE=1
       ```
-      - change {YOUR_INITIALS} with a unique string. For example, I used SSI so it would be DietPi_SSI.
-      - be sure to save the changes
+         - Change {YOUR_INITIALS} with a unique string. For example, I used SSI so it would be DietPi_SSI.
+         - Save the changes
 4. Copy the dietpi.txt and dietpi-wifi.txt you edited to the top level directory of your sd card.
 
 5. Eject the SD card from your laptop
@@ -76,12 +76,13 @@ With all the equipment ready you are good to follow the below steps !!
 1. Using the admin website of your router at
    - check the CLIENTS page for the IPADDR of the pi that is booted up.
    - use SSH to login into your PI using
-  | ------------- |
-  | ssh root@IPADDR|
-  |password: dietpi|
-  
+   
+  |Command| Password|
+  | ------------- |-------------|
+  | ssh root@IPADDR |       dietpi|
+    
    - Now the installations start and the connection will be closed automatically.
    - SSH Login to PI again. This time DietPi interface will be opened prompting you to change the Software and User password. Be sure to change the passwords.
    
 ### You are now ready to start install platform software.
-1. Continue with other installs such as: [IOT Platform Install](../RPI_IOT_PLATFORM_INSTALL_tutorial)  mostly by using diepi-software
+Follow the tutorial to install IOT platform software [IOT Platform Install](../RPI_IOT_PLATFORM_INSTALL_tutorial)
