@@ -1,13 +1,13 @@
 # IOT Platform Installation Tutorial #
 
 ## Prequisites ##
-1. laptop on wifi
-2. dietpi on RPI on wifi
+1. Laptop connected to Wi-fi. [Router Setup Tutorial](../Setup_Router_Tutorial)
+2. Dietpi on RPI on Wi-fi. [RPI Setup Tutorial](../RPI_SETUP)
 
 ## Steps to follow ##
 
 1. SSH to the RPI using the command `ssh dietpi@[PI_IPADDRESS]`
-
+     - In the router admin panel, check the CLIENTS page for the IPADDR of the pi.
 2. To install the softwares go to Search Software tab in DietPi interface
    - Type mqtt, Hit OK and select `123 MQTT message broker`. Install by hitting the spacebar and selecting ok
    - Type node-red, Hit OK  and select `122  Node-RED: tool for wiring devices, APIs and online services`. Install by hitting the spacebar and selecting ok
@@ -31,6 +31,8 @@ Nowthat we already installed postgres, we will configure it now.
 
 When prompted, enter a password and confirm it, select 'n' for superuser, and 'y' for the next two questions.
 
+ ![createuser](Img_Directory/createuser.png)
+
 3. connect to Postgres using the shell and create a test database:
 
 > psql
@@ -53,6 +55,8 @@ When prompted, enter a password and confirm it, select 'n' for superuser, and 'y
 
 > select * from people;
 
+ ![insert_and_select](Img_Directory/insert_and_select.png)
+
 8. To make the postgre ready for node-red run plsql on your pi an alter the listen_address settings using:
 
 >  sudo su postgres
@@ -61,7 +65,7 @@ When prompted, enter a password and confirm it, select 'n' for superuser, and 'y
 
 >  ALTER SYSTEM SET LISTEN_ADDRESSES = '*';
 
-  `Note:` This will allow your postgres to recieve ip traffic.  The system is now exposed since this allows anyone to connect.
+ **Note:** ```This will allow your postgres to recieve ip traffic.  The system is now exposed since this allows anyone to connect.```
 
   3. Go to the root console by hitting `ctrl+D` twice and run below command to restart the service
 
@@ -71,12 +75,15 @@ When prompted, enter a password and confirm it, select 'n' for superuser, and 'y
 
 > cat /var/log/postgresql/postgresql-13-main.log
 
+ ![postgre_log](Img_Directory/postgre_log.png)
  
 ### Setup NODE-RED ###
 
-1.   Connect to node-red using RPI Static IPaddr found in CLIENTS page in your WI-FI admin Panel.
+1.   Connect to node-red using RPI Static IPaddr found in CLIENTS page in your router admin Panel.
 
-http://{YOUR_RPI_IPADDRESS}:1880
+```http://{YOUR_RPI_IPADDRESS}:1880```
+
+![node-red](Img_Directory/node-red.png)
 
 1. Install node-red-contrib-re-postgres in your ssh command line using:
 
@@ -93,4 +100,4 @@ npm install node-red-contrib-re-postgres
 7. Double click on the node and configure a database instance
 8. Pull in a trigger and template node and debug node and wire them as below
 
-
+![wire-node](Img_Directory/wire_node.png)
