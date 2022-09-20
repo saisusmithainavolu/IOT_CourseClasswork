@@ -2,13 +2,16 @@
 
 Leshan is an open source OMA Lightweight Machine to Machine (LWM2M) java client and server implementation. Below are the steps that help you to setup LWM2M on your Raspberry Pi.
 
-## Requirement #
+## Requirement ##
 1. Laptop or Desktop - I am using my personal laptop with Windows 11 OS. It is a 11th Gen Intel Core-i7 64-bit operating system.
 2. Raspberry Pi with MicroSD card and DietPi Installed on it. [RPI_OS_Setup](../RPI_SETUP/RPI_OS_Setup.md)
 3. Wi-Fi Connectivity. [Router Setup Tutorial](../Setup_Router_Tutorial)
 
-6. Access to the lwm2m server/client code from the [eclipse leshan project] (https://www.eclipse.org/leshan/) at [ Leshan Github ](https://github.com/eclipse/leshan) 
-## Steps ##
+## LWM2M server/client code ##
+
+LWM2M server/client code is available from [eclipse leshan project](https://www.eclipse.org/leshan/) at [ Leshan Github ](https://github.com/eclipse/leshan). In the below steps you will clone the leshan repo to install leshan
+
+## Let's get Started ##
 
 ### Logon to Raspbery PI ###
 1. using
