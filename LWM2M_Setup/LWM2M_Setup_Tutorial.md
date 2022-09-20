@@ -13,20 +13,17 @@ LWM2M server/client code is available from [eclipse leshan project](https://www.
 
 ## Let's get Started ##
 
-### Logon to Raspbery PI ###
-1. using
+### Install Diet-Pi Software ###
+1. Login to Raspberry Pi
 ```
-ssh dietpi@(IPADDR_OF_PI)
+ssh dietpi@(IPADDR)
 ```
-2. use the password you setup in the pi configuration
-
-### Install development environment on RPI
-
-1. Install git
-   - On command line in dietpi start dietpi-software
+2. Install git
+   - Open the Diet-Pi interface using below command
     ```
     sudo dietpi-software
     ```
+    - Go to Search Software tab
     - search for git ( should be package 17 )
     - press spacebar to select ( asterick [*] should show
     - tab to ok and press enter
@@ -62,6 +59,7 @@ ssh dietpi@(IPADDR_OF_PI)
     ```
     java --version
     ```
+2. Install node.js
 3. Install maven on the rapberry pi
    1. In the dietpi directory create a download directory
    ```
