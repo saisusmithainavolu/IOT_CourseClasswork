@@ -18,14 +18,15 @@ LWM2M server/client code is available from [eclipse leshan project](https://www.
 ```
 ssh dietpi@(IPADDR)
 ```
-2. Install git
-   - Open the Diet-Pi interface using below command
-    ```
-    sudo dietpi-software
-    ```
+2. Open the Diet-Pi interface using below command
+```
+sudo dietpi-software
+```
+3. Install git
+   - 
     - Go to Search Software tab
     - search for git ( should be package 17 )
-    - press spacebar to select ( asterick [*] should show
+    - press spacebar to select
     - tab to ok and press enter
     - navigate to install on dietpi-software menu page
     - press enter and it should show that the software 
@@ -34,7 +35,6 @@ ssh dietpi@(IPADDR)
     ```
     - navagate with tabs to <ok> and press enter
     - install should begin using apt scripts
-    - it should take less then a minute or two depending on network traffic
     - check that is installed by using the command on the pi
     ```
     git --version
@@ -45,7 +45,7 @@ ssh dietpi@(IPADDR)
     sudo dietpi-software
     ```
     - search for Java JDK ( should be package 8 )
-    - press spacebar to select ( asterick [*] should show
+    - press spacebar to select 
     - tab to ok and press enter
     - navigate to install on dietpi-software menu page
     - press enter and it should show that the software 
@@ -54,14 +54,23 @@ ssh dietpi@(IPADDR)
     ```
     - navagate with tabs to <ok> and press enter
     - install should begin using apt scripts
-    - it should take less then 10 minutes to install the openJDK jre and jdk depending on network traffic
     - check that is installed by using the command on the pi
     ```
     java --version
     ```
 2. Install node.js
-3. Install maven on the rapberry pi
-   1. In the dietpi directory create a download directory
+     - On command line in dietpi start dietpi-software
+    ```
+    sudo dietpi-software
+    ```
+    - search for node.js 
+    - press spacebar to select 
+    - tab to ok and press enter
+    - navigate to install on dietpi-software menu page
+    - navagate with tabs to <ok> and press enter
+   - install should begin using apt scripts
+3. Install maven
+   1. In the dietpi command prompt, create a download directory
    ```
    mkdir download
    ```
@@ -92,17 +101,12 @@ ssh dietpi@(IPADDR)
    bash
    mvn -v
    ```
-   results should look like
- 
-   Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
-Maven home: /home/dietpi/download/apache-maven-3.8.6
-Java version: 17.0.3, vendor: Debian, runtime: /usr/lib/jvm/java-17-openjdk-arm64
-Default locale: en_US, platform encoding: UTF-8
-OS name: "linux", version: "5.15.32-v8+", arch: "aarch64", family: "unix"
+  
+image
    
-   9. create a JAVA_HOME environment variable pointing the install jdk
+   9. create a JAVA_HOME environment variable
 
-      - add the JAVA_HOME to the .bashrc (check your java directory matches the path provided below change as required )
+      - add the JAVA_HOME to the .bashrc
       ```
       sudo echo 'JAVA_HOME="/usr/lib/jvm/java-17-openjdk-arm64"' >> ~/.bashrc
       ```
@@ -111,26 +115,19 @@ OS name: "linux", version: "5.15.32-v8+", arch: "aarch64", family: "unix"
       bash
       echo $JAVA_HOME
       ```
-      result should look like
-      ```
-      /usr/lib/jvm/java-17-openjdk-arm64
-      ```
+image
 
-4. Install leshan git and build  - instructions form [leshan git](https://github.com/eclipse/leshan)
+4. Install leshan git and build form [leshan git](https://github.com/eclipse/leshan)
    - clone the leshan repo using
-   ```
-   cd
-   mkdir projects
-   cd projects
-   git clone https://github.com/eclipse/leshan.git
-   ```
+   
+image
+   
    cloning the directory should be less than a minute
    - build leshan
-     ```
-     cd ~/projects/leshan
-     mvn clean install
-     ```
-   - The build may take 20 minutes or longer
+   
+image
+   
+
 
 ### Test the leshan server
 1. Start the server using
