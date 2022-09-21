@@ -38,6 +38,6 @@ I have additionally installed Java JRE and node.js along with Java JDK, Git to a
     - navagate with tabs to <ok> and press enter
     - install should begin using apt scripts
   
-## Experiments ##
+## Experiments Performed ##
 
-I ran the bootstrap server, created objects in the dietPi client and used wireshark to analyze the protocols 
+I ran the bootstrap server, created LWM2M objects in the dietPi client and used wireshark to analyze the protocols. Detailed explanation is present in [EXPERIMENTS](https://github.com/saisusmithainavolu/VU_FALL22_IOT_SI/blob/main/LWM2M_Setup/Experiments.md)
