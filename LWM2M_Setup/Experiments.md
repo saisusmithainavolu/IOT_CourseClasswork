@@ -9,7 +9,7 @@ After you register the client to leshan page, you can create objects from DietPi
 
 ![createobject](https://user-images.githubusercontent.com/112504410/191579708-0ae2e7e5-c00a-4300-b7d5-99b76c986bfa.png)
 
-Information like Object name,Object Id's and thier description can be found at this link [LWM2M Object ID's](https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html)
+Information like Object name,Object Id's and thier description can be found at this link [LWM2M Object and Resource Registry](https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html)
 
 I created Air Quality Object and Energy object
 |Object|Command|
@@ -20,6 +20,8 @@ I created Air Quality Object and Energy object
 ![Air quality object](https://user-images.githubusercontent.com/112504410/191582126-510123ff-2f11-4165-be87-d03d8804bc81.png)
 
 ![enerygy object](https://user-images.githubusercontent.com/112504410/191582153-3f8d04b9-5339-4e2a-be35-3b0ddb1517ac.png)
+
+- When connected to respective software applications/sensors, if you want you can read the resource information by clicking on "R" and write/update the information by clicking on "W"
 
 ## Experiment 2:
 ### Using Wireshark to Analyse protocols
@@ -48,4 +50,20 @@ I downloaded Wireshark 3.6.8 from the link [Wireshark Download](https://www.wire
 - Exit Wireshark
 
 ## Experiment 3:
-### 
+### Running bootstrap demo server
+
+- In the downloads directory in the raspberry Pi, get the jar file(if not present already)
+```
+wget https://ci.eclipse.org/leshan/job/leshan/lastSuccessfulBuild/artifact/leshan-bsserver-demo.jar
+```
+- Run the leshan bootstrap server 
+``` 
+java -jar leshan-bsserver-demo/target/leshan-bsserver-demo-*-SNAPSHOT-jar-with-dependencies.jar
+```
+
+**Configure the lwm2m-client sample in the Demo Bootstrap Server:**
+
+- Click on “Add new client bootstrap configuration”
+
+- Enter the following data:
+
