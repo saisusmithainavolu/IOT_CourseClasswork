@@ -38,5 +38,6 @@ I have additionally installed Java JRE and node.js along with Java JDK, Git to a
     - navagate with tabs to <ok> and press enter
     - install should begin using apt scripts
   
+## Experiments ##
 
-
+I ran the bootstrap server, created objects in the dietPi client and used wireshark to analyze the protocols 
