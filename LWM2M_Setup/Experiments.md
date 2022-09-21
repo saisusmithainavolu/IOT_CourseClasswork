@@ -7,7 +7,7 @@ LWM2M objects are functionalities the LWM2M client provides. An Object is a name
 
 After you register the client to leshan page, you can create objects from DietPi terminal using below command
 
-![createobject](https://user-images.githubusercontent.com/112504410/191579708-0ae2e7e5-c00a-4300-b7d5-99b76c986bfa.png)
+![createobject](Img_Directory/createobject.png)
 
 Information like Object name,Object Id's and thier description can be found at this link [LWM2M Object and Resource Registry](https://technical.openmobilealliance.org/OMNA/LwM2M/LwM2MRegistry.html)
 
@@ -17,9 +17,9 @@ I created Air Quality Object and Energy object
 |Air Quality|`create 3428`|
 |Energy|`create 3331`|
 
-![Air quality object](https://user-images.githubusercontent.com/112504410/191582126-510123ff-2f11-4165-be87-d03d8804bc81.png)
+![Air quality object](Img_Directory/Airquality_object.png)
 
-![enerygy object](https://user-images.githubusercontent.com/112504410/191582153-3f8d04b9-5339-4e2a-be35-3b0ddb1517ac.png)
+![energy object](Img_Directory/enerygy_object.png)
 
 - When connected to respective software applications/sensors, if you want you can read the resource information by clicking on "R" and write/update the information by clicking on "W"
 
@@ -34,7 +34,7 @@ I downloaded Wireshark 3.6.8 from the link [Wireshark Download](https://www.wire
 - Visit http://IPPADDR_OF_PI:8080 in the browser
 - Come back to Wireshark to see packets being captured of your client page of leshan server
 
-![wireshark](https://user-images.githubusercontent.com/112504410/191587560-13fdff9d-e976-4eeb-b5ee-8aa9d2b5f0a2.png)
+![wireshark](Img_Directory/wireshark.png)
 
 - You can stop capturing packetsusing the icon with a red square on it.  It should be the second one from the left.  
 - You can apply filter based on protocols by giving protocol name(such as HTTP or TCP) in the display filter and click the blue arrow
@@ -42,7 +42,7 @@ I downloaded Wireshark 3.6.8 from the link [Wireshark Download](https://www.wire
 - When you select the HTTP GET message, the Ethernet frame, IP datagram, TCP segment, and HTTP message header information will be displayed in the packet-header window
 - Right click on this packet and navigate to Analyze --> Follow --> TCP Stream. You will be able to see the full http data
 
-![TCP stream](https://user-images.githubusercontent.com/112504410/191589772-ca6a2914-b17a-427a-b80f-0afe824a3687.png)
+![TCP stream](Img_Directory/TCP_stream.png)
 
 - Data sent using any protocol without encryption can be captured and analyzed the same way to obtain some interesting details.
 - I am able to see all my LWM2M objects id's displayed in the TCP Stream
