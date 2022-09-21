@@ -19,3 +19,11 @@ I created Air Quality Object and Energy object
 ![Air quality object](https://user-images.githubusercontent.com/112504410/191582126-510123ff-2f11-4165-be87-d03d8804bc81.png)
 
 ![enerygy object](https://user-images.githubusercontent.com/112504410/191582153-3f8d04b9-5339-4e2a-be35-3b0ddb1517ac.png)
+
+## Experiment 2:
+### Using Wireshark to Analyse protocols
+
+I downloaded Wireshark 3.6.8 from the link [Wireshark Download](https://www.wireshark.org/download.html). If you are a windows user, click on Windows Installer(64-bit) to begin te download.
+
+Install and open the wireshark 
+
