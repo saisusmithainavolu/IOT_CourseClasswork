@@ -66,4 +66,10 @@ java -jar leshan-bsserver-demo/target/leshan-bsserver-demo-*-SNAPSHOT-jar-with-d
 - Click on “Add new client bootstrap configuration”
 
 - Enter the following data:
+  - Give the Client Endpoint name 
+  - Setup the Credentials using two security modes. This step is optional
+  - Provide paths to deleted. This step is optional
+  - Add LWM2M server and Bootstrap server to the client. This step is optional
+  - Click on ADD after all the configuration is done.
+  - You can see your client registered.
 
