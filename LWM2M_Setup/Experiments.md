@@ -70,6 +70,8 @@ java -jar leshan-bsserver-demo/target/leshan-bsserver-demo-*-SNAPSHOT-jar-with-d
   - Setup the Credentials using two security modes. This step is optional
   - Provide paths to deleted. This step is optional
   - Add LWM2M server and Bootstrap server to the client. This step is optional
+  - In all configurations,I used Pre-shared key mode of security for authentication by providing Identity and key(in hexadecial format) 
   - Click on ADD after all the configuration is done.
   - You can see your client registered.
 
+![bootstrap_server](Img_Directory/boostrap_server.png)
