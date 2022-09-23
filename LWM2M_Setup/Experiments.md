@@ -63,7 +63,7 @@ java -jar leshan-bsserver-demo/target/leshan-bsserver-demo-*-SNAPSHOT-jar-with-d
 
 **Configure the lwm2m-client sample in the Demo Bootstrap Server:**
 
-- Click on “Add new client bootstrap configuration”
+- Click on “Add client configuration”
 
 - Enter the following data:
   - Give the Client Endpoint name 
