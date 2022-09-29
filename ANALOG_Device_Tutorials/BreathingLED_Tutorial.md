@@ -54,9 +54,15 @@ except KeyboardInterrupt:
 - Run the python code using
 `sudo python3 breathingled.py`
 
+Now you can see the LED breathing. Click on the below thumbnail to see it
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fWEfsainrvA/0.jpg)](https://youtu.be/fWEfsainrvA)
 
-**Note:** You can increase the breathing time by changing the `time.sleep(0.05)` to `time.sleep(0.10)` i.e., from 5 seconds to 10 seconds or your desired time 
+**Note:** You can increase the breathing time by changing the `time.sleep(0.05)` to `time.sleep(0.10)` i.e., from 5 seconds to 10 seconds or your desired time. I changed it to 10 seconds time.sleep(0.10) and you can see the delay in LED breathing
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/zN0Bi5kldSg/0.jpg)](https://youtu.be/zN0Bi5kldSg)
+
+**Note**: To stop execution you can press `Ctrl+C`
 
 ### Programming in C
 
@@ -97,6 +103,15 @@ int main(void)
 }
 ```
 
+- Compile the C code using
+`gcc led.c -o bLed -lwiringPi`
+
+- Run the C code using
+`sudo ./bLed`
+
+Now the you see the LED light breathing
+
+**Note**: To stop execution you can press Ctrl+C
 
 
 
