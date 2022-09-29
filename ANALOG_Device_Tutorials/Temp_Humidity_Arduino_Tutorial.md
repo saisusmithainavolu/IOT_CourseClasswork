@@ -11,10 +11,11 @@ In this Tutorial, we will use the ESP32 to read temperature and humidity data of
 - Breadboard
 - 4 Jumper M/M wires
 
-### Wiring for Arduino terminal
+### Wiring for ESP32 
 If you have a four pin DHT11 and want to output the humidity and temperature to Arduino, wire it like this:
 
-
+![wiring](Img_Directory/ESP32.png)
+![wiring](Img_Directory/Ardruino_wiring.jpeg)
 
 Connect the ESP32 board to your laptop with the USB cable
 
@@ -30,7 +31,8 @@ Connect the ESP32 board to your laptop with the USB cable
 5. Go to Tools -> Port
     - Select the relevant port.(COM3/COM4)
 6. Go to Sketch -> Include Library -> Add .ZIP Library…. Select the .zip file from your computer
-    -We use the third party library DHTesp. Download the Zip file of the external library from: https://github.com/beegee-tokyo/DHTesp
+    - We use the third party library DHTesp. 
+    - Download the Zip file of the external library from: https://github.com/beegee-tokyo/DHTesp
 
 ### Programming the DHT11 in Arduino IDE
 
@@ -57,6 +59,8 @@ delay(2000);
 }
 ```
 
--Press the Upload button at the top in Arduino IDE. This will let the code compile and upload to your board.
--Go to the Serial monitor and set the baud rate as "115200".
--You can see the temperature and humidity readings in the Serial Monitor.
+- Press the Upload button at the top in Arduino IDE. This will let the code compile and upload to your board.
+- Go to the Serial monitor and set the baud rate as "115200".
+- You can see the temperature and humidity readings in the Serial Monitor.
+
+![Serial_Monitor](Img_Directory/Serial_Monitor.png)
