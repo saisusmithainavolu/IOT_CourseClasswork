@@ -17,10 +17,13 @@ If you have a four pin DHT11 and want to output the humidity and temperature to 
     - Connect the signal pin of DHT11 to 7th pin of Raspberry Pi GPIO
     - Connect the ground pin of DHT11 to 6th pin of Raspberry Pi GPIO
     - The resistor is connected between the VCC and signal lines.
+![DHT11](Img_Directory/DHT11.jpg) 
+![wiring](Img_Directory/wiring.png)
+![pi_wiring](Img_Directory/pi_wiring.jpeg)
 ### Programming the DHT11
 We’ll be using WiringPi to program the DHT11 in C. If you don’t have WiringPi installed already, install the "WiringPi" from DietPi Software interface. or follow this link for instructions on [how to install WiringPi](https://projects.drogon.net/raspberry-pi/wiringpi/download-and-install/).
 
-After Wiring-Pi is successfully installed, build the C code using nano and save it with ".c" extension eg: `example.c`
+After Wiring-Pi is successfully installed, build the C code using nano and save it with ".c" extension eg: `temp.c`
 The following C program I used which will output the humidity and temperature (in °C and °F) readings to an SSH terminal
 ```
 #include <wiringPi.h>
@@ -102,10 +105,13 @@ int main( void )
 ```
 Compile the c code using below command
 ```
-gcc -o example example.c -lwiringPi -lwiringPiDev
+gcc -o temp temp.c -lwiringPi -lwiringPiDev
 ```
 
 Then run the program with:
 ```
-sudo ./example
+sudo ./temp
 ```
+
+SSh Terminal Output:
+![Temp_Hum](Img_Directory/Temp_Hum.png)
