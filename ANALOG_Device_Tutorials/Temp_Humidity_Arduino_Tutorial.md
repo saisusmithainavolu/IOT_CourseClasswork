@@ -34,4 +34,29 @@ Connect the ESP32 board to your laptop with the USB cable
 
 ### Programming the DHT11 in Arduino IDE
 
+Build the C code and save it with ".ino" extension
 
+```
+#include "DHTesp.h"
+DHTesp dht; //Define the DHT object
+int dhtPin = 13;//Define the dht pin
+void setup() {
+dht.setup(dhtPin, DHTesp::DHT11);//Initialize the dht pin and dht object
+Serial.begin(115200); //Set the baud rate to 115200
+}
+void loop() {
+flag:TempAndHumidity newValues = dht.getTempAndHumidity();//Get the Temperature and humidity
+if (dht.getStatus() ! = 0) { //Judge if the correct value is
+read
+goto flag; //If there is an error, go back to
+the flag and re-read the data
+}
+Serial.println(" Temperature:" + String(newValues.temperature) +
+" Humidity:" + String(newValues.humidity));
+delay(2000);
+}
+```
+
+-Press the Upload button at the top in Arduino IDE. This will let the code compile and upload to your board.
+-Go to the Serial monitor and set the baud rate as "115200".
+-You can see the temperature and humidity readings in the Serial Monitor.
