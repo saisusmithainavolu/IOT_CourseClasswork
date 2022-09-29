@@ -5,18 +5,20 @@ The DHT11 temperature and humidity sensor is a little sensor that provides digit
 
 ### Components:
 
-  - DHT11 Temperature and Humidity Sensor(4-pin)
-  - Raspberry Pi
-  - 10K Ohm pull up resistor
-  - Breadboard
-  - 3 Jumper wires
+- DHT11 Temperature and Humidity Sensor(4-pin)
+- Raspberry Pi
+- 10K Ohm pull up resistor
+- Breadboard
+- 3 Jumper wires
  
 ### Wiring for SSH terminal output
 If you have a four pin DHT11 and want to output the humidity and temperature to the SSH terminal, wire it like this:
-    - Connect the VCC pin of DHT11 to 2nd pin of Raspberry Pi GPIO
-    - Connect the signal pin of DHT11 to 7th pin of Raspberry Pi GPIO
-    - Connect the ground pin of DHT11 to 6th pin of Raspberry Pi GPIO
-    - The resistor is connected between the VCC and signal lines.
+
+- Connect the VCC pin of DHT11 to 2nd pin of Raspberry Pi GPIO
+- Connect the signal pin of DHT11 to 7th pin of Raspberry Pi GPIO
+- Connect the ground pin of DHT11 to 6th pin of Raspberry Pi GPIO
+- The resistor is connected between the VCC and signal lines.
+    
 ![DHT11](Img_Directory/DHT11.jpg) 
 ![wiring](Img_Directory/wiring.png)
 ![pi_wiring](Img_Directory/pi_wiring.jpeg)
@@ -24,7 +26,8 @@ If you have a four pin DHT11 and want to output the humidity and temperature to 
 We’ll be using WiringPi to program the DHT11 in C. If you don’t have WiringPi installed already, install the "WiringPi" from DietPi Software interface. or follow this link for instructions on [how to install WiringPi](https://projects.drogon.net/raspberry-pi/wiringpi/download-and-install/).
 
 After Wiring-Pi is successfully installed, build the C code using nano and save it with ".c" extension eg: `temp.c`
-The following C program I used which will output the humidity and temperature (in °C and °F) readings to an SSH terminal
+
+The following is the C program I used which will output the humidity and temperature (in °C and °F) readings to an SSH terminal
 ```
 #include <wiringPi.h>
 #include <stdio.h>
