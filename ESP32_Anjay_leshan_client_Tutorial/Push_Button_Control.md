@@ -23,7 +23,7 @@ In this Tutorial, we will see how we can create the Push button object in Leshan
 
 ### Steps to build/configure Anjay client:
 
-Assuming that anjay-esp32-client directory is setup and your ESP32 is registered in leshan server. 
+Assuming that Anjay library is build and installed in your PI. [Build_Anjay_Library](https://github.com/saisusmithainavolu/VU_FALL22_IOT_SI/blob/main/ESP32_Anjay_leshan_client_Tutorial/build_Anjay_library.md)
 
 1. move to the anjay-esp32-client directory and setup the local enironment for using the esp tools
 ```
