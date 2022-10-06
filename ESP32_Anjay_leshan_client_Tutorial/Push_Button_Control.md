@@ -6,6 +6,8 @@ In this Tutorial, we will see how we can record the push button activites in Les
 - When the button is pressed, the pin A is connected to the pin B
 - When the button is NOT pressed, the pin A is NOT connected to the pin B
 
+![button](Img_Directory/esp32-how-button-works.jpg) 
+
 ### Components:
 
 - Push Button
@@ -17,7 +19,7 @@ In this Tutorial, we will see how we can record the push button activites in Les
 
 ### Wiring 
 
-
+![circuit](Img_Directory/pushbutton_circuit.jpeg) 
 
 ### Steps to build/configure Anjay client:
 
@@ -41,12 +43,10 @@ idf.py set-target esp32
      ```
      - navigate to **Component Config**
      - select **anjay-esp32-client**
-     - navigate to **Board** and setup as below 
+     - navigate to **Board** and setup as below      
+         ![pushpin](Img_Directory/pushpin.png) 
      - navigate to **Client options** and setup as below    
-     	- Endpoint name --> <client name>  - in my case it is "sinavolu"
-     	- Server URI --> coap://{RaspberriPi_IP}:5683 
-     	- Choose socket --> UDP 
-     	- Choose security mode --> Non-secure connection
+     	![client_options](Img_Directory/client_options.png) 
      -  navigate to **Connection configuration**
          - enter your IOT ROUTER WIFI SSID and key to allow the esp32 acccess to your router and PI.
      - After all the changes are set, press 'S' to save and 'Q' to quit the menuconfig 
@@ -68,6 +68,8 @@ idf.py set-target esp32
      ```
      You should see flashing
  
-Now you can see the push button object enabled in your ESP32 client in leshan server. You can read the digital input state(False if LED is not turned on and vice versa) and digital input counter(No.of times the button pushed) of the push button. Check out the below video to see the interactions of push button with leshan server
-     
+Now you can see the push button object enabled in your ESP32 client in leshan server. You can read the digital input state(False if LED is not turned on and vice versa) and digital input counter(No.of times the button pushed) of the push button. 
+
+![Push_button](Img_Directory/Push_button.png) 
+
  
