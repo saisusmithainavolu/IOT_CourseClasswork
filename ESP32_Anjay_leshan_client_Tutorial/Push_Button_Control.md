@@ -19,7 +19,7 @@ In this Tutorial, we will see how we can record the push button activites in Les
 
 
 
-### Building Anjay Client:
+### Steps to build/configure Anjay client:
 
 Assuming that anjay-esp32-client directory is setup and your ESP32 is registered in leshan server. 
 
@@ -39,31 +39,32 @@ idf.py set-target esp32
      cd ~/projects/Anjay-esp32-client
      idf.py menuconfig
      ```
-     - navigate to "Component Config->" 
-     - select anjay-esp32-client
-
-     Setup your config to be:
-     (anjay-esp32-client) Endpoint name
-     (coap://{LESHAN_SERVER_IP}:5683) Server URI
-     Choose socket (UDP)  --->
-     Choose security mode (Non-secure connection)  --->
-
-
-     - navigate to "Board - > "
-
-     -  navigate to "Client options ->"
-          - Change Server URI from coaps://try-anjay.avsystem.com:5684 to  coaps://YOUR_LESHAN_SERVER_IP_ADDR:5684
-	    I used coaps://192.168.8.224:5684
-	    Your IP my be different
-	    
-     -  navigate to "WiFi ->"
-         To enter your IOT ROUTER WIFI SSID and key to allow the esp32 acccess to your router and PI.
-	 
-4. Build the code for the device using
+     - navigate to **Component Config**
+     - select **anjay-esp32-client**
+     - navigate to **Board** and setup as below 
+     - navigate to **Client options** and setup as below    
+     	- Endpoint name --> <client name>  - in my case it is "sinavolu"
+     	- Server URI --> coap://{RaspberriPi_IP}:5683 
+     	- Choose socket --> UDP 
+     	- Choose security mode --> Non-secure connection
+     -  navigate to **Connection configuration**
+         - enter your IOT ROUTER WIFI SSID and key to allow the esp32 acccess to your router and PI.
+     - After all the changes are set, press 'S' to save and 'Q' to quit the menuconfig 
+4. Build the code for the push button using
     
     ```
-     cd ~/projects/Anjay-esp32-client
      idf.py build
      ```
+5. find the port by using
 
+   ```
+   ls -l /dev/ttyUSB*
+   ```
+
+6. flash the device  
+     ```
+     sudo chmod 666 /dev/ttyUSB0
+     idf.py -p 0 flash
+     ```
+     You should see flashing
  
