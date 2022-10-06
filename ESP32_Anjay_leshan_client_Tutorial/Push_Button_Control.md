@@ -1,6 +1,6 @@
 ## ESP32 Anjay leshan client experiments - Push Button control
 
-In this Tutorial, we will see how we can record the push button activites in Leshan server. The button is a basic component and widely used in many ESP32 projects. In the code, by reading the state of the input pin, we can infer the button is pressed or not.
+In this Tutorial, we will see how we can create the Push button object in Leshan Server thru Anjay libraries. The button is a basic component and widely used in many ESP32 projects. In the code, by reading the state of the input pin, we can infer the button is pressed or not.
 
 **How Button Works**
 - When the button is pressed, the pin A is connected to the pin B
