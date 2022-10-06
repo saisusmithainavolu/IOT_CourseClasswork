@@ -25,18 +25,14 @@ In this Tutorial, we will see how we can create the Push button object in Leshan
 
 Assuming that anjay-esp32-client directory is setup and your ESP32 is registered in leshan server. 
 
-1. move to the anjay-esp32-client directory
-```
-cd ~/projects/Anjay-esp32-client
-```
-
-2. Setup the local enironment for using the esp tools
+1. move to the anjay-esp32-client directory and setup the local enironment for using the esp tools
 ```
 cd ~/projects/Anjay-esp32-client
 . $HOME/esp/esp-idf/export.sh
 idf.py set-target esp32 
 ```
-3. setup the device requirements
+
+2. Setup the device requirements
      ```
      cd ~/projects/Anjay-esp32-client
      idf.py menuconfig
@@ -50,23 +46,32 @@ idf.py set-target esp32
      -  navigate to **Connection configuration**
          - enter your IOT ROUTER WIFI SSID and key to allow the esp32 acccess to your router and PI.
      - After all the changes are set, press 'S' to save and 'Q' to quit the menuconfig 
-4. Build the code for the push button using
+    
+3. Build the code for the push button using
     
     ```
      idf.py build
      ```
-5. find the port by using
+4. Find the port by using
 
    ```
    ls -l /dev/ttyUSB*
    ```
 
-6. flash the device  
+5. Flash the device  
      ```
      sudo chmod 666 /dev/ttyUSB0
      idf.py -p 0 flash
      ```
      You should see flashing
+     
+6. Start the server using
+```
+cd ~/projects/leshan
+java -jar leshan-server-demo/target/leshan-server-demo-*-SNAPSHOT-jar-with-dependencies.jar &
+```
+
+7. Connect on Leshan demo UI: http://RPI_IPADDR:8080
  
 Now you can see the push button object enabled in your ESP32 client in leshan server. You can read the digital input state(False if LED is not turned on and vice versa) and digital input counter(No.of times the button pushed) of the push button. 
 
