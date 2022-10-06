@@ -68,3 +68,6 @@ idf.py set-target esp32
      ```
      You should see flashing
  
+Now you can see the push button object enabled in your ESP32 client in leshan server. You can read the digital input state and digital input counter(No.of times the button pushed) of the push button. Check out the below video to see the interactions of push button with leshan server
+     
+ 
