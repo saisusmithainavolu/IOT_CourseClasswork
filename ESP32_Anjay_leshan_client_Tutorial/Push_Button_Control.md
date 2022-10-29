@@ -19,6 +19,7 @@ In this Tutorial, we will see how we can create the Push button object in Leshan
 
 ### Wiring 
 
+![button_circuit](Img_Directory/button_circuit.png) 
 ![circuit](Img_Directory/pushbutton_circuit.jpeg) 
 
 ### Steps to build/configure Anjay client:
