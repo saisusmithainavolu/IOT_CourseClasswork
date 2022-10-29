@@ -13,6 +13,8 @@ In this Tutorial, we will see how we can create the Light control object in Lesh
 
 ### Wiring 
 
+![led_circuit](Img_Directory/led_circuit.png) 
+
 ![LED_circuit](Img_Directory/LED_circuit.jpeg) 
 
 ### Steps to build/configure Anjay client:
