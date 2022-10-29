@@ -7,3 +7,5 @@ This tutorial outlines how to build the working sensor or controler module that 
 
 **2. Push Button:** Tutorial outlines how to create the Push button object in Leshan Server thru Anjay libraries
    - [Push Button control tutorial](https://github.com/saisusmithainavolu/VU_FALL22_IOT_SI/blob/main/ESP32_Anjay_leshan_client_Tutorial/Push_Button_Control.md)
+
+Experiment on Raspberyy Pi CPU temperature reading in Leshan client- [Experiment](https://github.com/saisusmithainavolu/VU_FALL22_IOT_SI/blob/main/ESP32_Anjay_leshan_client_Tutorial/Experiment.md) 
